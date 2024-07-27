@@ -71,8 +71,8 @@ button {
 @media (max-width: 768px) {
   .review-save-container {
     padding: 15px;
-    margin-top: 30px; /* Adjusted for better spacing on tablets */
-    max-width: 90%; /* Reduced width for better mobile view */
+    margin-top: 50px; /* Adjusted for better spacing on tablets */
+    max-width: 80%; /* Reduced width for better mobile view */
   }
 
   .review-save-container h2 {

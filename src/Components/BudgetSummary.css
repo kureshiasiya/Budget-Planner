@@ -54,7 +54,7 @@ html {
 @media (max-width: 480px) {
   .budget-summary-container {
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 80px;
   }
 
   .budget-summary-container h2 {

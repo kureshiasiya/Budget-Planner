@@ -60,7 +60,7 @@ select.form-input {
   .form-container {
     padding: 15px;
     margin: 30px auto; /* Adjusted margin for better spacing on smaller screens */
-    max-width: 90%; /* Use percentage to ensure it's responsive */
+    max-width: 80%; /* Use percentage to ensure it's responsive */
   }
 
   .form-input {
@@ -78,9 +78,7 @@ select.form-input {
 
 @media (max-width: 480px) {
   .form-container {
-    padding: 10px;
-    margin: 20px auto; /* Further adjusted margin for better spacing */
-    max-width: 95%; /* Ensure container doesn't touch the edges */
+    margin-top: 80px;
   }
 
   .form-input {
