@@ -11,6 +11,7 @@ html {
     212
   ); /* Light gray background for the entire screen */
 }
+
 .budget-summary-container {
   text-align: center;
   padding: 20px;
@@ -33,6 +34,23 @@ html {
   color: #555;
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .budget-summary-container {
+    padding: 15px;
+    margin-top: 50px;
+    max-width: 90%; /* Adjusted width for better mobile view */
+  }
+
+  .budget-summary-container h2 {
+    font-size: 20px;
+  }
+
+  .budget-summary-container h3 {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 480px) {
   .budget-summary-container {
     padding: 10px;
