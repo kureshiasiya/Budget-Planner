@@ -1,7 +1,7 @@
 // src/components/ReviewSave.js
 
 import React from "react";
-
+import "./ReviewSave.css";
 const ReviewSave = ({ formData, handleEdit }) => {
   const handleSave = () => {
     localStorage.setItem("budgetData", JSON.stringify(formData));
