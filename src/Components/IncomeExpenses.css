@@ -1,0 +1,139 @@
+/* src/components/IncomeExpenses.css */
+
+.income-expenses-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: #f2edf1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.income-expenses-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-input::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.expense-item input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.expense-item button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4d4d;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.expense-item button:hover {
+  background-color: #cc0000;
+}
+
+.add-expense-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.add-expense-button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .income-expenses-container {
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .form-input {
+    font-size: 14px;
+  }
+
+  .expense-item {
+    flex-direction: column; /* Stack inputs vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .expense-item input {
+    margin-bottom: 10px;
+    margin-right: 0; /* Remove right margin on small screens */
+  }
+
+  .expense-item button {
+    margin-left: 0; /* Remove left margin on small screens */
+  }
+
+  .add-expense-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .income-expenses-container h2 {
+    font-size: 18px;
+  }
+
+  .add-expense-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

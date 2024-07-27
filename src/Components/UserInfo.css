@@ -1,0 +1,91 @@
+/* src/components/UserInfo.css */
+
+.form-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: #f2edf1;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  color: #888;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+select.form-input {
+  appearance: none;
+  background: #fff
+    url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjQ4cHgiIHZpZXdCb3g9IjAgMCA4IDgiIHdpZHRoPSI0OHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IGhlaWdodD0iMTIuOCIgZmlsbD0ibm9uZSIgaWQ9IlN2Z19BcnRfXyIgIHdpZHRoPSIxMi44IiB4PSIwIiB5PSIwIi8+PHBhdGggZD0iTTEuMzM2MyAzLjMzNjNMNCA2bDIuNjYzNy0yLjY2MzdsLTAuOTY2Ny0wLjk2NjNsLTEuNzY3MyAxLjc2NzNsLTEuNzY3My0xLjc2NzNsLTAuOTY2NyAwLjk2NjN6IiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+")
+    no-repeat right 10px center;
+  background-size: 12px;
+}
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .form-input {
+    font-size: 14px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}

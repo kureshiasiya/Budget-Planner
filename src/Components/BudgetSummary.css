@@ -1,0 +1,53 @@
+/* src/components/BudgetSummary.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(
+    244,
+    167,
+    212
+  ); /* Light gray background for the entire screen */
+}
+.budget-summary-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: #f2edf1;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.budget-summary-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.budget-summary-container h3 {
+  color: #555;
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .budget-summary-container {
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .budget-summary-container h2 {
+    font-size: 18px;
+  }
+
+  .budget-summary-container h3 {
+    font-size: 16px;
+  }
+
+  .budget-summary-container p {
+    font-size: 14px;
+  }
+}
