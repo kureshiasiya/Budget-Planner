@@ -1,28 +1,46 @@
+// src/components/ReviewSave.js
+
 import React from "react";
-import "./ReviewSave.css"; // Ensure CSS file is imported
 
 const ReviewSave = ({ formData, handleEdit }) => {
   const handleSave = () => {
     localStorage.setItem("budgetData", JSON.stringify(formData));
   };
 
+  // Function to determine the currency symbol
+  const getCurrencySymbol = (currency) => {
+    switch (currency) {
+      case "INR":
+        return "₹";
+      case "USD":
+        return "$";
+      // Add other currencies as needed
+      default:
+        return "";
+    }
+  };
+
   return (
     <div className="review-save-container">
       <h2>Review and Save</h2>
-      <div className="review-section">
+      <div>
         <h3>User Information</h3>
         <p>Name: {formData.name}</p>
         <p>Email: {formData.email}</p>
         <p>Preferred Currency: {formData.currency}</p>
       </div>
-      <div className="review-section">
+      <div>
         <h3>Income and Expenses</h3>
-        <p>Monthly Income: ${formData.income}</p>
+        <p>
+          Monthly Income: {getCurrencySymbol(formData.currency)}
+          {formData.income}
+        </p>
         <h4>Expenses:</h4>
         <ul>
           {formData.expenses.map((expense, index) => (
             <li key={index}>
-              {expense.name}: ${expense.amount}
+              {expense.name}: {getCurrencySymbol(formData.currency)}
+              {expense.amount}
             </li>
           ))}
         </ul>

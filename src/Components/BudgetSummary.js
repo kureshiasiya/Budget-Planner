@@ -36,12 +36,34 @@ const BudgetSummary = ({ formData }) => {
 
   const remainingBudget = totalIncome - totalExpenses;
 
+  // Function to get currency symbol
+  const getCurrencySymbol = (currency) => {
+    switch (currency) {
+      case "INR":
+        return "₹";
+      case "USD":
+        return "$";
+      // Add other currencies as needed
+      default:
+        return "";
+    }
+  };
+
   return (
     <div className="budget-summary-container">
       <h2>Budget Summary</h2>
-      <h3>Total Income: ${totalIncome.toFixed(2)}</h3>
-      <h3>Total Expenses: ${totalExpenses.toFixed(2)}</h3>
-      <h3>Remaining Budget: ${remainingBudget.toFixed(2)}</h3>
+      <h3>
+        Total Income: {getCurrencySymbol(formData.currency)}
+        {totalIncome.toFixed(2)}
+      </h3>
+      <h3>
+        Total Expenses: {getCurrencySymbol(formData.currency)}
+        {totalExpenses.toFixed(2)}
+      </h3>
+      <h3>
+        Remaining Budget: {getCurrencySymbol(formData.currency)}
+        {remainingBudget.toFixed(2)}
+      </h3>
     </div>
   );
 };
