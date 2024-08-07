@@ -93,7 +93,7 @@ button {
   .review-save-container {
     padding: 10px;
     margin-top: 20px; /* Adjusted for better spacing on smaller screens */
-    max-width: 95%; /* Further reduced width for small screens */
+    max-width: 80%; /* Further reduced width for small screens */
   }
 
   .review-save-container h2 {

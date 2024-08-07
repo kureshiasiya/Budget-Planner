@@ -39,7 +39,7 @@ html {
   .budget-summary-container {
     padding: 15px;
     margin-top: 50px;
-    max-width: 70%; /* Adjusted width for better mobile view */
+    max-width: 80%; /* Adjusted width for better mobile view */
   }
 
   .budget-summary-container h2 {
